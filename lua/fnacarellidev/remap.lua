@@ -1,12 +1,8 @@
 local nnoremap = require("fnacarellidev.keymap").nnoremap
 
 nnoremap("<leader>pv", "<cmd> Ex <CR>")
-
 nnoremap("<leader>s", ":so %<CR>") -- source current file
-nnoremap("<leader> ", "<cmd> NERDTreeToggle <CR>")
-nnoremap("<leader>t", "<cmd> NERDTreeFocus <CR>")
-
 nnoremap("<C-j>", ":m +1 <CR>") -- CTRL + J Move line down
 nnoremap("<C-k>", ":m .-2 <CR>") -- CTRL + K Move line up
-
-nnoremap("qq", "<cmd> wq <CR>")
+nnoremap("<leader>q", "<cmd> wq <CR>")
+nnoremap("<leader>w", "<cmd> w <CR>")
