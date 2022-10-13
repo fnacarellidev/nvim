@@ -1,14 +1,18 @@
-vim.opt.nu = true
-vim.opt.relativenumber = true
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.numberwidth = 4
-vim.opt.mouse = "a"
-vim.opt.incsearch = true
+local g = vim.g
+local o = vim.o
+local opt = vim.opt
 
-vim.o.timeoutlen = 500
-vim.o.updatetime = 200
-vim.o.undofile = true
-vim.o.termguicolors = true
+opt.nu = true
+opt.relativenumber = true
+opt.tabstop = 4
+opt.shiftwidth = 4
+opt.numberwidth = 4
+opt.mouse = "a"
+opt.incsearch = true
 
-vim.g.mapleader = " "
+o.timeoutlen = 500
+o.updatetime = 200
+o.undofile = true
+o.termguicolors = true
+
+g.mapleader = " "
