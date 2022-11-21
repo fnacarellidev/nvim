@@ -1,3 +1,5 @@
 require("fnacarellidev.set")
-require("fnacarellidev.set_nerdtree")
 require("fnacarellidev.remap")
+require("fnacarellidev.nvim-tree")
+require("fnacarellidev.indent_blankline")
+require("gitsigns").setup()

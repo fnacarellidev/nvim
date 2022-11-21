@@ -16,3 +16,5 @@ o.undofile = true
 o.termguicolors = true
 
 g.mapleader = " "
+g.user42 = 'fnacarel'
+g.mail42 = 'fnacarel@student.42sp.org.br'
