@@ -3,7 +3,11 @@ require("nvim-tree").setup({
 		mappings = {
 			list = {
 				{ key = "u", action = "dir_up" },
+				{ key = "t", action = "dir_down"},
 			},
+		},
+		float = {
+			enable = true,
 		},
 	},
 	renderer = {

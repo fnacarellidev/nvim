@@ -1,5 +1,5 @@
 require("fnacarellidev.set")
 require("fnacarellidev.remap")
-require("fnacarellidev.nvim-tree")
 require("fnacarellidev.indent_blankline")
 require("gitsigns").setup()
+vim.cmd('source ~/.config/nvim/lua/fnacarellidev/vimrc.vim')

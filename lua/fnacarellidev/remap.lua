@@ -1,11 +1,19 @@
-local nnoremap = require("fnacarellidev.keymap").nnoremap
+vim.keymap.set("n", "<C-j>", "<cmd>m +1 <CR>") -- CTRL + J Move line down
+vim.keymap.set("n", "<C-k>", "<cmd>m.-2 <CR>") -- CTRL + K Move line up
 
-nnoremap("<C-j>", "<cmd>m +1 <CR>") -- CTRL + J Move line down
-nnoremap("<C-k>", "<cmd>m.-2 <CR>") -- CTRL + K Move line up
-nnoremap("<leader>t", "<cmd>NvimTreeToggle<CR>")
-nnoremap("<leader>n", "<cmd>NvimTreeFocus<CR>")
-nnoremap("<leader>l", "<cmd>BufferNext<CR>")
-nnoremap("<leader>h", "<cmd>BufferPrevious<CR>")
-nnoremap("<leader>e", "<cmd>BufferClose<CR>")
-nnoremap("<leader>q", "<cmd> wq <CR>")
-nnoremap("<leader>w", "<cmd> w <CR>")
+vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
+
+vim.keymap.set("n", "<leader>t", "<cmd>NvimTreeToggle<CR>")
+vim.keymap.set("n", "<leader>n", "<cmd>NvimTreeFocus<CR>")
+
+vim.keymap.set("n", "<leader>l", "<cmd>BufferNext<CR>")
+vim.keymap.set("n", "<leader>h", "<cmd>BufferPrevious<CR>")
+vim.keymap.set("n", "<leader>e", "<cmd>BufferClose<CR>")
+
+vim.keymap.set("n", "<leader>q", "<cmd> wq <CR>")
+vim.keymap.set("n", "<leader>w", "<cmd> w <CR>")
+
+-- netrw
+vim.keymap.set("n", "<leader>pv", "<cmd>Ex <CR>")
+vim.keymap.set("n", "<leader>o", "<cmd>Rex <CR>")
