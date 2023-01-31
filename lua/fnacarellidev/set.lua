@@ -15,9 +15,6 @@ opt.wrap = false
 opt.swapfile = false
 opt.backup = false
 
-opt.hlsearch = false
-opt.incsearch = true
-
 -- Yank copies to clipboard
 opt.clipboard = 'unnamedplus'
 
