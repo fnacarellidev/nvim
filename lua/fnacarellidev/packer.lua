@@ -2,11 +2,12 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
+	use 'sainnhe/edge'
+	use 'ThePrimeagen/harpoon'
 	use 'lukas-reineke/indent-blankline.nvim'
 	use '42Paris/42header'
 	use 'lewis6991/gitsigns.nvim'
 	use 'tpope/vim-commentary'
-	use 'romgrk/barbar.nvim'
 	use 'nvim-lualine/lualine.nvim'
 	use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use ('nvim-treesitter/playground')
@@ -21,10 +22,6 @@ return require('packer').startup(function(use)
 		},
 		tag = 'nightly'
 	}
-	use({
-		'rose-pine/neovim',
-		as = 'rose-pine',
-	})
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		requires = {
