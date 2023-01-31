@@ -1,23 +1,21 @@
 local keymap = vim.keymap
 
-keymap.set("n", "<C-j>", "<cmd>m +1 <CR>") -- CTRL + J Move line down
-keymap.set("n", "<C-k>", "<cmd>m.-2 <CR>") -- CTRL + K Move line up
+-- Insert Mode
+keymap.set("i", "jk", "<ESC>") -- Typing jk quits insert mode
 
-keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
-keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
+-- Normal Mode
+keymap.set("n", "<C-j>", "<cmd>m +1 <CR>") -- CTRL + j Move line down
+keymap.set("n", "<C-k>", "<cmd>m.-2 <CR>") -- CTRL + k Move line up
+keymap.set("n", "<leader>w", "<cmd>w<CR>")
+keymap.set("n", "<leader>q", "<cmd>wq<CR>")
+keymap.set("n", "<leader>bq", "<cmd>bd<CR>") -- Buffer quit
+keymap.set("n", "<leader>pv", "<cmd>Ex<CR>") -- Enters netrw
+keymap.set("n", "<leader>o", "<cmd>Rex<CR>") -- Closes netrw
+keymap.set("n", "<leader>nh", "<cmd>nohl<CR>") -- Clears every highlight
+keymap.set("n", "x", '"_x') -- Deleting a single character does not go into paste register
+keymap.set("n", "<leader>+", "<C-a>") -- Increments value in cursor
+keymap.set("n", "<leader>-", "<C-x>") -- Decrements value in cursor
 
-keymap.set("n", "<leader>t", "<cmd>NvimTreeToggle<CR>")
-keymap.set("n", "<leader>n", "<cmd>NvimTreeFocus<CR>")
-
-keymap.set("n", "<leader>l", "<cmd>BufferNext<CR>")
-keymap.set("n", "<leader>h", "<cmd>BufferPrevious<CR>")
-keymap.set("n", "<leader>e", "<cmd>BufferClose<CR>")
-
-keymap.set("n", "<leader>q", "<cmd> wq <CR>")
-keymap.set("n", "<leader>w", "<cmd> w <CR>")
-
-keymap.set("n", "<leader>d", "<cmd> bd <CR>")
-
---netrw
-keymap.set("n", "<leader>pv", "<cmd>Ex <CR>")
-keymap.set("n", "<leader>o", "<cmd>Rex <CR>")
+-- Visual Mode
+keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv") -- CTRL + j in visual mode moves every line selected down
+keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv") -- CTRL + k in visual mode moves every line selected up
