@@ -22,6 +22,8 @@ opt.clipboard = 'unnamedplus'
 opt.splitright = true
 opt.splitbelow = true
 
+opt.scrolloff = 8
+
 o.timeoutlen = 500
 o.updatetime = 200
 o.undofile = true
