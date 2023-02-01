@@ -39,4 +39,10 @@ return require('packer').startup(function(use)
 			{'rafamadriz/friendly-snippets'},
 		}
 	}
+	use ({
+    "glepnir/lspsaga.nvim",
+    branch = "main",
+    requires = { {"nvim-tree/nvim-web-devicons"} }
+})
+	use 'onsails/lspkind.nvim'
 end)
