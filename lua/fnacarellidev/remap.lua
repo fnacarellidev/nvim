@@ -15,6 +15,7 @@ keymap.set("n", "<leader>nh", "<cmd>nohl<CR>") -- Clears every highlight
 keymap.set("n", "x", '"_x') -- Deleting a single character does not go into paste register
 keymap.set("n", "<leader>+", "<C-a>") -- Increments value in cursor
 keymap.set("n", "<leader>-", "<C-x>") -- Decrements value in cursor
+keymap.set("n", "<leader>g", "gg=G", { silent = true }) -- Fix indentation in current buffer
 
 -- Visual Mode
 keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv") -- CTRL + j in visual mode moves every line selected down
