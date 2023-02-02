@@ -20,7 +20,7 @@ saga.setup({
 		enable = true,
 		separator = " ➜ ",
 		show_file = true,
-		respect_root = true,
+		respect_root = false,
 		folder_level = 1,
 		color_mode = true
 	}
