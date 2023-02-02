@@ -24,3 +24,8 @@ keymap.set("n", "<leader>+", "<C-a>") -- Increments value in cursor
 keymap.set("n", "<leader>-", "<C-x>") -- Decrements value in cursor
 keymap.set("n", "x", '"_x') -- Deleting a single character does not go into paste register
 
+-- Tab Management
+keymap.set("n", "<leader>to", ":tabnew<CR>") -- Open new tab
+keymap.set("n", "<leader>tc", ":tabclose<CR>") -- Close tab
+keymap.set("n", "<leader>tn", ":tabn<CR>") -- Next tab
+keymap.set("n", "<leader>tN", ":tabp<CR>") -- Prev tab
