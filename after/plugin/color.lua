@@ -1,3 +1,13 @@
-vim.g.edge_dim_foreground = 1
-vim.g.edge_transparent_background = 2
-vim.cmd.colorscheme("edge")
+local pinestatus, pine = pcall(require, "rose-pine")
+if not pinestatus then
+	return
+end
+
+pine.setup({
+	disable_background = true,
+	disable_float_background = true,
+	dark_variant = 'main',
+	disable_italics = true
+})
+
+vim.cmd.colorscheme("rose-pine")
