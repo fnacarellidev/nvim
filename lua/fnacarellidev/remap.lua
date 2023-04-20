@@ -8,6 +8,7 @@ keymap.set("n", "<leader>q", "<cmd>wq<CR>") -- Save and quit
 keymap.set("n", "<leader>bq", "<cmd>bd<CR>") -- Buffer quit
 keymap.set("n", "<leader>nh", "<cmd>nohl<CR>") -- Clears every highlight
 keymap.set("n", "<leader>g", "gg=G", { silent = true }) -- Fix indentation in current buffer
+keymap.set("n", "<leader>if", "=i{") -- Fix indentation in current function
 
 -- Move Lines
 keymap.set("n", "<C-j>", "<cmd>m +1 <CR>") -- CTRL + j Move line down
