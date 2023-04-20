@@ -41,4 +41,5 @@ return require('packer').startup(function(use)
 		requires = { {"nvim-tree/nvim-web-devicons"} }
 	})
 	use 'onsails/lspkind.nvim'
+	use 'prichrd/netrw.nvim'
 end)
