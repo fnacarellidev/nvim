@@ -14,7 +14,7 @@ mason_lspconfig.setup({
 	ensure_installed = {
 		'clangd',
 		'eslint',
-		'sumneko_lua',
+		'lua_ls',
 		'rust_analyzer',
 	},
 })
