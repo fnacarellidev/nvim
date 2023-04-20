@@ -10,6 +10,7 @@ return require('packer').startup(function(use)
 	use 'lewis6991/gitsigns.nvim'
 	use 'tpope/vim-commentary'
 	use 'nvim-lualine/lualine.nvim'
+	use 'rose-pine/neovim'
 	use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use ('nvim-treesitter/playground')
 	use {
