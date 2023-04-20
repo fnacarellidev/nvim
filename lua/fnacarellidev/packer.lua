@@ -3,6 +3,7 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	use 'sainnhe/edge'
+	use 'catppuccin/nvim'
 	use 'ThePrimeagen/harpoon'
 	use 'lukas-reineke/indent-blankline.nvim'
 	use '42Paris/42header'
