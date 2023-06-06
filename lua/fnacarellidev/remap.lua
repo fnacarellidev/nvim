@@ -30,3 +30,4 @@ keymap.set("n", "<leader>to", ":tabnew<CR>") -- Open new tab
 keymap.set("n", "<leader>tc", ":tabclose<CR>") -- Close tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") -- Next tab
 keymap.set("n", "<leader>tN", ":tabp<CR>") -- Prev tab
+keymap.set("n", "<leader>v", ":vsp<CR>", { silent = true}) -- Vertical Split
