@@ -2,6 +2,7 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
+	use 'catppuccin/nvim'
 	use 'lewis6991/gitsigns.nvim'
 	use 'tpope/vim-commentary'
 	use 'nvim-lualine/lualine.nvim'
@@ -37,9 +38,14 @@ return require('packer').startup(function(use)
 		}
 	}
 	use ({
-    "glepnir/lspsaga.nvim",
-    branch = "main",
-    requires = { {"nvim-tree/nvim-web-devicons"} }
-})
+		"glepnir/lspsaga.nvim",
+		branch = "main",
+		requires = { {"nvim-tree/nvim-web-devicons"} }
+	})
+	use {
+		"ThePrimeagen/harpoon",
+		branch = "harpoon2",
+		requires = { {"nvim-lua/plenary.nvim"} }
+	}
 	use 'onsails/lspkind.nvim'
 end)

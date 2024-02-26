@@ -1,13 +1,17 @@
-local pinestatus, pine = pcall(require, "rose-pine")
-if not pinestatus then
+local catppuccinstatus, cattpuccin = pcall(require, "catppuccin")
+if not catppuccinstatus then
 	return
 end
 
-pine.setup({
-	disable_background = true,
-	disable_float_background = true,
-	dark_variant = 'main',
-	disable_italics = true
+cattpuccin.setup({
+	flavour = 'latte',
+	background = {
+        light = "latte",
+        dark = "mocha",
+    },
+	no_italic = true,
+	lsp_saga = true,
+	harpoon = true,
 })
 
-vim.cmd.colorscheme("rose-pine")
+vim.cmd.colorscheme("catppuccin")
