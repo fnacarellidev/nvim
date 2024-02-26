@@ -2,10 +2,6 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
-	use 'sainnhe/edge'
-	use 'ThePrimeagen/harpoon'
-	use 'lukas-reineke/indent-blankline.nvim'
-	use '42Paris/42header'
 	use 'lewis6991/gitsigns.nvim'
 	use 'tpope/vim-commentary'
 	use 'nvim-lualine/lualine.nvim'
