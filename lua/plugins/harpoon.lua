@@ -1,5 +1,5 @@
 local keybinds = {
-	{ 
+	{
 		"<leader>a",
 		(function()
 			local harpoon = require("harpoon") harpoon:list():append()

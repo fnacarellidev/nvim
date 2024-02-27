@@ -1,14 +1,11 @@
 return {
+	{ "nvim-treesitter/nvim-treesitter", lazy = false },
 	{
 		"catppuccin/nvim",
 		lazy = false,
 		config = function()
 			require("catppuccin").setup({
 				flavour = 'latte',
-				background = {
-					light = 'latte',
-					dark = 'mocha',
-				},
 				transparent_background = false,
 				no_italic = true,
 			})
@@ -18,26 +15,19 @@ return {
 		"tpope/vim-commentary",
 		lazy = false,
 	},
-	{
-		"onsails/lspkind.nvim"
-	},
-	{
-		'VonHeikemen/lsp-zero.nvim',
-		dependencies = {
-			-- LSP Support
-			{'neovim/nvim-lspconfig'},
-			{'williamboman/mason.nvim'},
-			{'williamboman/mason-lspconfig.nvim'},
-			-- Autocompletion
-			{'hrsh7th/nvim-cmp'},
-			{'hrsh7th/cmp-buffer'},
-			{'hrsh7th/cmp-path'},
-			{'saadparwaiz1/cmp_luasnip'},
-			{'hrsh7th/cmp-nvim-lsp'},
-			{'hrsh7th/cmp-nvim-lua'},
-			-- Snippets
-			{'L3MON4D3/LuaSnip'},
-			{'rafamadriz/friendly-snippets'},
-		},
-	},
+	{ "onsails/lspkind.nvim", lazy = true, event = "LspAttach" },
+	-- lsp related
+	{ 'VonHeikemen/lsp-zero.nvim' },
+	{ 'neovim/nvim-lspconfig' },
+	{ 'williamboman/mason.nvim' },
+	{ 'williamboman/mason-lspconfig.nvim' },
+	{ 'saadparwaiz1/cmp_luasnip' },
+	{ "hrsh7th/nvim-cmp", lazy = true, event = "InsertCharPre" },
+	{ "hrsh7th/cmp-buffer", lazy = true, event = "InsertCharPre" },
+	{ "hrsh7th/cmp-path", lazy = true, event = "InsertCharPre" },
+	{ "hrsh7th/cmp-nvim-lsp", lazy = true, event = "InsertCharPre" },
+	{ "hrsh7th/cmp-nvim-lua", lazy = true, event = "InsertCharPre" },
+	{ 'L3MON4D3/LuaSnip' },
+	{ 'rafamadriz/friendly-snippets' },
+	{ "glepnir/lspsaga.nvim" },
 }

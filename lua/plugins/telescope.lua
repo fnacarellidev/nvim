@@ -1,4 +1,4 @@
-function telescope_setup()
+local function telescope_setup_func()
 	local keymap = vim.keymap
 	local telescope_setup, telescope = pcall(require, "telescope")
 	local builtin_setup, builtin = pcall(require, 'telescope.builtin')
@@ -44,5 +44,5 @@ return {
 	dependencies = {
 		"nvim-lua/plenary.nvim"
 	},
-	config = telescope_setup,
+	config = telescope_setup_func,
 }

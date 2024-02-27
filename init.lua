@@ -12,7 +12,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("fnacarellidev")
+require("fnacarellidev.set")
 require('lazy').setup('plugins')
-
+require("fnacarellidev")
 vim.cmd("colorscheme catppuccin")
