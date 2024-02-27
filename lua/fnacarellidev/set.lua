@@ -23,7 +23,6 @@ opt.splitright = true
 opt.splitbelow = true
 
 opt.scrolloff = 8
-opt.colorcolumn = "80"
 
 o.timeoutlen = 500
 o.updatetime = 200
