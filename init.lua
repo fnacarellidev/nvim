@@ -1,2 +1,4 @@
+require("config.lazy")
 require("fnacarellidev")
-require("netrw").setup()
+vim.cmd("colorscheme catppuccin")
+vim.cmd("Lspsaga winbar_toggle")
