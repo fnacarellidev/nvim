@@ -20,13 +20,23 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
 	spec = {
 		{
-			{ import = "plugins" },
-			{ import = "plugins.lsp" },
+			{
+				import = "plugins"
+			},
+			{
+				import = "plugins.lsp"
+			},
 		}
 	},
 	change_detection = {
 		enabled = false,
 	},
-	install = { colorscheme = { "catppuccin" } },
-	checker = { enabled = true },
+	install = {
+		colorscheme = {
+			"catppuccin"
+		}
+	},
+	checker = {
+		enabled = true
+	},
 })
