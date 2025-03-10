@@ -1,4 +1,14 @@
 local keymap = vim.keymap
+local builtin_setup, builtin = pcall(require, 'telescope.builtin')
+if not builtin_setup then
+	return
+end
+
+-- Telescope
+keymap.set('n', '<leader>ff', builtin.find_files, {})
+keymap.set('n', '<leader>fs', builtin.live_grep, {})
+keymap.set('n', '<leader>fc', builtin.grep_string, {})
+keymap.set('n', '<leader>fb', builtin.buffers, {})
 
 keymap.set("i", "jk", "<ESC>") -- Typing jk quits insert mode
 
