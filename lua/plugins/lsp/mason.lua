@@ -1,4 +1,16 @@
 return {
 	"williamboman/mason.nvim",
-	opts = {}
+	dependencies = {
+		"williamboman/mason-lspconfig.nvim",
+	},
+	config = function(_, opts)
+		require("mason").setup()
+		require("mason-lspconfig").setup(opts)
+	end,
+	opts = {
+		ensure_installed = {
+			"gopls",
+			"clangd"
+		},
+	}
 }
