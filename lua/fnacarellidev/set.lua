@@ -31,5 +31,6 @@ o.undofile = true
 o.termguicolors = true
 
 g.mapleader = " "
+g.go_fmt_fail_silently = 1
 
 vim.cmd("autocmd BufEnter * set formatoptions-=cro")
