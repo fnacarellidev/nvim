@@ -17,8 +17,8 @@ vim.keymap.set('n', '<C-k>', ':m.-2 <CR>') -- CTRL + k Move line up
 vim.keymap.set('v', '<C-j>', ':m \'>+1<CR>gv=gv') -- CTRL + j in visual mode moves every line selected down
 vim.keymap.set('v', '<C-k>', ':m \'<-2<CR>gv=gv') -- CTRL + k in visual mode moves every line selected up
 
-vim.keymap.set('n', '<leader>pv', ':Ex<CR>') -- Enters netrw
-vim.keymap.set('n', '<leader>o', ':Rex<CR>') -- Closes netrw
+vim.keymap.set('n', '<leader>pv', ':Ex<CR>', { silent = true }) -- Enters netrw
+vim.keymap.set('n', '<leader>o', ':Rex<CR>', { silent = true }) -- Closes netrw
 
 vim.keymap.set('n', 'x', '"_x') -- Deleting a single character does not go into paste register
 vim.keymap.set('n', '<leader>v', ':vsp<CR>', opts_silent) -- Vertical Split

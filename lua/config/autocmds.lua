@@ -38,7 +38,7 @@ vim.api.nvim_create_autocmd('FileType', {
     end)
     utils.reset_highlight_group(0, 'BqfPreviewRange')  -- Remove kevinhwang91/nvim-bqf Preview Highlight
     utils.reset_highlight_group(0, 'BqfPreviewCursor') -- Remove kevinhwang91/nvim-bqf Preview Highlight
-    vim.api.nvim_buf_set_keymap(ev.buf, 'n', '<Esc>', ':ccl | lcl <CR>', {})
+    vim.api.nvim_buf_set_keymap(ev.buf, 'n', '<Esc>', ':ccl | lcl <CR>', { silent = true })
   end,
   desc = "Quickfix Window Specs"
 })
