@@ -1,0 +1,2 @@
+-- Very useful tool, place under the char and it will tell me which highlight group its being used
+:echo synIDattr(synID(line('.'), col('.'), 1), 'name')
